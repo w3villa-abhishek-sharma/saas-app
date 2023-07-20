@@ -1,0 +1,58 @@
+<% if @user %>
+  <h3 class="pull-right">Organization: <%= @tenant.name %></h3>
+  <%= render 'projects/list' %>
+<% else %>
+  
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between">
+      <div class="col-lg-3 col-lg-offset-3 card me-1 p-4">
+        <h2>Free Plan</h2>
+        <div class="price pull-right">
+          Price: Free
+        </div>
+        <div class="features">
+          <ul>
+            <li>Unlimited file uploads</li>
+            <li>Responsive design</li>
+            <li>Access anywhere</li>
+            <li>1 project</li>
+          </ul>
+        </div>
+        <p class="text-center">
+          <%= link_to 'Sign Up', new_user_registration_path(plan: 'free'), class: 'btn btn-primary sign-up' %>
+        </p>
+      </div>      
+      <div class="col-lg-3 card ms-1 p-4">
+        <h2>Premium Plan</h2>
+          <div class="price pull-right">
+            Price: $10
+          </div>
+        <div class="features">
+          <ul>
+            <li>Unlimited file uploads</li>
+            <li>Responsive design</li>
+            <li>Access anywhere</li>
+            <li class='extra'>Unlimited projects</li>
+          </ul>
+        </div>
+        <p class="text-center">
+          <%= link_to 'Sign Up', new_user_registration_path(plan: 'premium'), class: 'btn btn-primary sign-up' %>
+        </p>
+      </div>
+    </div>  
+  </div>
+
+<% end %>
+
+<code>
+  <%# <%= @user.inspect %>
+  <br/>
+
+  <%#<%= @user.tenants.first.inspect %>
+  <br/>
+
+  <%#<%= @tenant.inspect %>
+  <br/>
+
+  <%#<%= @users.inspect %>
+</code>
