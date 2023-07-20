@@ -1192,3 +1192,251 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 31ms (Views: 21.9ms | ActiveRecord: 0.9ms | Allocations: 15307)
 
 
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2023-07-20 11:34:24 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2023-07-20 06:04:24.783931"], ["id", 1]]
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 27ms (ActiveRecord: 9.3ms | Allocations: 5617)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:34:24 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 150)
+  Rendered common/_navbar.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 7080)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 7724)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-07-20 11:45:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 831)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 4617)
+  Rendered common/_navbar.html.erb (Duration: 1.3ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 119.4ms | Allocations: 64467)
+Completed 200 OK in 156ms (Views: 127.7ms | ActiveRecord: 0.9ms | Allocations: 81606)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:45:12 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 593)
+  Rendered common/_navbar.html.erb (Duration: 0.3ms | Allocations: 165)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 7707)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 9110)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:46:21 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 569)
+  Rendered common/_navbar.html.erb (Duration: 2.5ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 8310)
+Completed 200 OK in 64ms (Views: 58.9ms | ActiveRecord: 0.0ms | Allocations: 9763)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:47:02 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 569)
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:47:08 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 178)
+  Rendered common/_navbar.html.erb (Duration: 1.5ms | Allocations: 514)
+  Rendered layout layouts/application.html.erb (Duration: 8211.3ms | Allocations: 88150)
+Completed 200 OK in 8213ms (Views: 8211.8ms | ActiveRecord: 0.0ms | Allocations: 88967)
+
+
+  Rendered common/_navbar.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 14541.2ms | Allocations: 176089)
+Completed 200 OK in 14549ms (Views: 14544.6ms | ActiveRecord: 0.0ms | Allocations: 177519)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:47:33 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 569)
+  Rendered common/_navbar.html.erb (Duration: 1.6ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 8310)
+Completed 200 OK in 40ms (Views: 32.4ms | ActiveRecord: 0.0ms | Allocations: 9691)
+
+
+Started GET "/users/sign_up?plan=free" for 127.0.0.1 at 2023-07-20 11:47:38 +0530
+Processing by RegistrationsController#new as HTML
+  Parameters: {"plan"=>"free"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 667)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 5854)
+  Rendered common/_navbar.html.erb (Duration: 0.5ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 12935)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 14829)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:48:25 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 570)
+  Rendered common/_navbar.html.erb (Duration: 1.8ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 8310)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 9743)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:48:27 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 141)
+  Rendered common/_navbar.html.erb (Duration: 0.5ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 6981)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 7739)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:48:28 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 141)
+  Rendered common/_navbar.html.erb (Duration: 0.7ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 6981)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 7646)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:48:43 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 141)
+  Rendered common/_navbar.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 6981)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 7670)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:48:43 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 141)
+  Rendered common/_navbar.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 6981)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 7667)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:48:58 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 570)
+  Rendered common/_navbar.html.erb (Duration: 2.2ms | Allocations: 498)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 8310)
+Completed 200 OK in 58ms (Views: 49.3ms | ActiveRecord: 0.0ms | Allocations: 9691)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:49:00 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 141)
+  Rendered common/_navbar.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 7052.6ms | Allocations: 85065)
+Completed 200 OK in 7056ms (Views: 7053.5ms | ActiveRecord: 0.0ms | Allocations: 85796)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:49:08 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 141)
+  Rendered common/_navbar.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6983)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7669)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:49:29 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 141)
+  Rendered common/_navbar.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 7189.8ms | Allocations: 85965)
+Completed 200 OK in 7194ms (Views: 7191.2ms | ActiveRecord: 0.0ms | Allocations: 86651)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:49:51 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 141)
+  Rendered common/_navbar.html.erb (Duration: 0.4ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 7268.6ms | Allocations: 85959)
+Completed 200 OK in 7273ms (Views: 7270.0ms | ActiveRecord: 0.0ms | Allocations: 86628)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:50:08 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 141)
+  Rendered common/_navbar.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 7134.1ms | Allocations: 85966)
+Completed 200 OK in 7136ms (Views: 7134.9ms | ActiveRecord: 0.0ms | Allocations: 86649)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:50:39 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 576)
+  Rendered common/_navbar.html.erb (Duration: 1.0ms | Allocations: 503)
+  Rendered layout layouts/application.html.erb (Duration: 7507.7ms | Allocations: 89183)
+Completed 200 OK in 7512ms (Views: 7509.8ms | ActiveRecord: 0.0ms | Allocations: 90550)
+
+
+Started GET "/" for 127.0.0.1 at 2023-07-20 11:51:18 +0530
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 569)
+  Rendered common/_navbar.html.erb (Duration: 1.3ms | Allocations: 502)
+  Rendered layout layouts/application.html.erb (Duration: 7181.2ms | Allocations: 89173)
+Completed 200 OK in 7187ms (Views: 7184.4ms | Allocations: 90609)
+
+
+Started GET "/users/sign_up?plan=free" for 127.0.0.1 at 2023-07-20 11:51:50 +0530
+Processing by RegistrationsController#new as HTML
+  Parameters: {"plan"=>"free"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 556)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 4509)
+  Rendered common/_navbar.html.erb (Duration: 0.5ms | Allocations: 187)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 11581)
+Completed 200 OK in 33ms (Views: 30.8ms | Allocations: 13178)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-07-20 11:51:53 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 178)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1875)
+  Rendered common/_navbar.html.erb (Duration: 0.4ms | Allocations: 187)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 8959)
+Completed 200 OK in 26ms (Views: 25.0ms | Allocations: 10290)
+
+
